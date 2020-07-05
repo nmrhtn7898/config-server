@@ -5,7 +5,7 @@
 * Private Repository 경우 username, password 필요.
 * pom.xml spring cloud config server 의존성 및 버전 관리 설정  
  
-#####application.yml
+###### application.yml
 
 ```$xslt
 spring:
@@ -19,7 +19,7 @@ spring:
           password: git 게정 비밀번호[private repo 경우 필요]
 ```
 
-#####pom.xml
+###### pom.xml
 
 ```$xslt
 <dependencies>
