@@ -6,7 +6,7 @@
 * config server 파일 시스템 또는 클래스패스에서 읽는 경우 search-locations 설정
 * pom.xml spring cloud config server 의존성 및 버전 관리 설정  
  
-###### application.yml
+###### bootstrap.yml
 
 ```$xslt
 encrypt:
