@@ -1,0 +1,11 @@
+
+  key: nuguribom
+spring:
+  cloud:
+    config:
+      server:
+        encrypt:
+          enabled: false
+        git:
+          uri: https://github.com/nmrhtn7898/config-repo/
+          search-paths: testservice
