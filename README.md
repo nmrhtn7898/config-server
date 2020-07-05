@@ -45,7 +45,7 @@ spring:
 ```
 2\. 사용 방법
 * [Spring Cloud Config Repository](https://github.com/nmrhtn7898/config-repo) 외부 설정 파일 리포지토리 설정 파일을 읽어서 캐시하여 사용.
-* 엔드 포인트 url 패턴 */{application-name}/{profile}*
+* 엔드 포인트 url 패턴 */{application-name}/{profile}*, 외부 설정 파일 리포지토리 변경 되는 경우 컨피그 서버에서 변경 된 설정 파일 읽음.
 * 사용 예시 /testservice/dev, profile dev 경우 default, dev 설정 파일 모두 사용하고 중복 프로퍼티는 dev 설정 파일에
  존재하는 프로퍼티 값으로 overwrite 한다. 응답 JSON 예시 아래와 같음.
 ```$xslt
