@@ -3,8 +3,10 @@
 1\. 설정 방법 
 * application.yml 설정 파일에 아래와 같이해당 설정 파일 리포지토리 uri 및 search-paths 설정.
 * Private Repository 경우 username, password 필요.
-* pom.xml spring cloud config server 의존성 및 버전 관리 설정   
-######application.yml
+* pom.xml spring cloud config server 의존성 및 버전 관리 설정  
+ 
+#####application.yml
+
 ```$xslt
 spring:
   cloud:
@@ -16,7 +18,9 @@ spring:
           username: git 계정 아이디[private repo 경우 필요]
           password: git 게정 비밀번호[private repo 경우 필요]
 ```
-######pom.xml
+
+#####pom.xml
+
 ```$xslt
 <dependencies>
         <dependency>
