@@ -1,8 +1,9 @@
 # Spring Cloud Config Server
 
 1\. 설정 방법 
-* application.yml 설정 파일에 아래와 같이해당 설정 파일 리포지토리 uri 및 search-paths 설정.
-* Private Repository 경우 username, password 필요.
+* application.yml 설정 파일에 아래와 같이 설정 파일을 읽어오는 방법에 따라 설정
+* git 리포지토리에서 읽는 경우 uri 및 search-paths 설정(private repository 경우 username, password 필요.
+* config server 파일 시스템 또는 클래스패스에서 읽는 경우 search-locations 설정
 * pom.xml spring cloud config server 의존성 및 버전 관리 설정  
  
 ###### application.yml
@@ -12,11 +13,13 @@ spring:
   cloud:
     config:
       server:
-        git:
+        git: [git 리포지토리에서 설정 파일을 읽어오는 경우]
           uri: https://github.com/nmrhtn7898/config-repo/
           search-paths: testservice, 디렉토리이름
           username: git 계정 아이디[private repo 경우 필요]
           password: git 게정 비밀번호[private repo 경우 필요]
+        native: [컨피그 서버 파일 시스템 또는 클래스패스에서 읽어오는 경우] 
+          search-locations: file://Users/testserivce or classpath:config/testservice
 ```
 
 ###### pom.xml
