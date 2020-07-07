@@ -1,4 +1,5 @@
 # Spring Cloud Config Server
+[![Build Status](https://travis-ci.org/nmrhtn7898/config-server.svg?branch=master)](https://travis-ci.org/nmrhtn7898/config-server)
 
 1\. 설정 방법 
 * application.yml 설정 파일에 아래와 같이 설정 파일을 읽어오는 방법에 따라 설정
