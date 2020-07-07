@@ -84,3 +84,10 @@ spring:
     ]
 }
 ```
+
+3\. 실행 방법
+* 일반 환경   
+1. *mvn spring-boot:run*
+* 도커 환경
+1. *mvn clean package docker:build*
+2. *docker-compose -f docker-compose.yml up -d*
