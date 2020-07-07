@@ -7,4 +7,4 @@ cache:
 before_install:
   - chmod +x mvnw
 script: "./mvnw clean compile test"
-after_success: "./mvnw mvn clean test jacoco:report coveralls:report"
+after_success: "./mvnw clean test jacoco:report coveralls:report"
