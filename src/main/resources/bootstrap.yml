@@ -7,5 +7,5 @@ spring:
         encrypt:
           enabled: false
         git:
-          uri: https://github.com/nmrhtn7898/config-repo/
+          uri: https://github.com/nmrhtn7898/config-repo
           search-paths: testservice
