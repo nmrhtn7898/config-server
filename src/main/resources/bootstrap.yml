@@ -1,6 +1,9 @@
 encrypt:
   key: nuguribom
+
 spring:
+  application:
+    name: configserver
   cloud:
     config:
       server:
