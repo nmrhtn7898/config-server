@@ -1,8 +1,14 @@
 version: '3'
+networks:
+  myweb:
 services:
-  config-server:
+  configserver:
+    container_name: "configserver"
     image: spring-cloud-config-server:1.0
     ports:
       - "8888:8888"
+    networks:
+      - default
+      - myweb
     environment:
       RUN_MESSAGE: "HELLO !!"
