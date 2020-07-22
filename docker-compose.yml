@@ -1,6 +1,7 @@
 version: '3'
 networks:
-  myweb:
+  eureka-server_myweb:
+    external: true
 services:
   configserver:
     container_name: "configserver"
@@ -8,7 +9,6 @@ services:
     ports:
       - "8888:8888"
     networks:
-      - default
-      - myweb
+      - eureka-server_myweb
     environment:
       RUN_MESSAGE: "HELLO !!"
